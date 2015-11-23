@@ -1,4 +1,4 @@
-## OBB AngularJS modules
+## OBB lodash mixins
 
 Collection of general-purpose in-house [lodash](http://lodash.com) mixins for OpenBizBox apps.
 
