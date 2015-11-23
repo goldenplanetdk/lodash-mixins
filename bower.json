@@ -1,0 +1,20 @@
+{
+  "name": "lodash-obb",
+  "main": "index.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/goldenplanetdk/lodash-mixins",
+  "authors": [
+    "Steven Pribilinskiy <stepan@goldenplanet.com>"
+  ],
+  "description": "Lodash mixins for OpenBizBox",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "devDependencies": {
+    "lodash": "~3.10.1"
+  }
+}
