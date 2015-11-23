@@ -1,4 +1,4 @@
-## OBB AngularJS modules
+## OBB lodash mixins
 
 Collection of general-purpose in-house [lodash](http://lodash.com) mixins for OpenBizBox apps.
 
@@ -11,3 +11,11 @@ To include all mixins use:
 ```
 require('lodash-obb');
 ```
+
+### Style guides
+
+- [Coding](https://github.com/lodash/lodash/blob/master/CONTRIBUTING.md#coding-guidelines)
+
+### TODO
+
+- Code coverage with [`istanbul`](https://gotwarlost.github.io/istanbul/)

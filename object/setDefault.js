@@ -10,9 +10,12 @@ _.mixin({'setDefault': setDefault});
  * @returns {*} Value or Object reference at path
  */
 function setDefault(object, path, defaultValue) {
+
 	var descendant = _.get(object, path);
+
 	if (descendant === undefined) {
 		_.set(object, path, defaultValue);
 	}
+
 	return _.get(object, path);
 }
