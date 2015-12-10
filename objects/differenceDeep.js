@@ -4,42 +4,48 @@ _.mixin({'differenceDeep': differenceDeep});
  * Creates an object with unique properties not included in the other object
  *
  * @param {Object} object The object to inspect
- * @param {Object}object The object with identical properties that must be excluded
- * @param {string} path The starting path of the property to get
+ * @param {Object} object The object with identical properties that must be excluded
  * @returns {Object} Object references with paths as keys
  */
-function differenceDeep(object, objectExcludeSame, initialPath) {
+function differenceDeep(object, objectExcludeSame) {
 
 	// return an empty object when the operands are same or when the object is null
-	if (_.isEqual(object, objectExcludeSame) || !_.isObject(object)) {
+	if (!_.isObject(object) || _.isEqual(object, objectExcludeSame)) {
 		return _.isArray(object) ? [] : {};
 	}
 
+	// object that will contain the differences
+	var diff = _.cloneDeep(object);
+
 	if (!_.isObject(objectExcludeSame)) {
-		return object;
+		return diff;
 	}
 
-	function deleteEqual(parent, parentExclude) {
+	function deleteEqual(parent, parentCompared) {
 
-		_.forOwn(parent, function(child, key) {
+		if (typeof parent != 'object') {
+			return;
+		}
 
-			// leave unique property
-			if (!_.has(parentExclude, key)) return;
+		_.forOwn(parent, function (child, key) {
 
-			var childExclude = parentExclude[key];
+			// leave unique property that is not exist in the compared object
+			if (false === _.has(parentCompared, key)) {
+				return;
+			}
+
+			var childCompared = parentCompared[key];
 
 			// delete same property so that only different properties will remain
-			if (_.isEqual(child, childExclude)) {
+			if (_.isEqual(child, childCompared)) {
 				delete parent[key];
 				return;
 			}
 
-			deleteEqual(child, childExclude)
+			deleteEqual(child, childCompared)
 		});
 	}
 
-	// object that will have the differences
-	var diff = _.cloneDeep(object);
 	deleteEqual(diff, objectExcludeSame);
 
 	return diff;
