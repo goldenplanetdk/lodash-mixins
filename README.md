@@ -14,7 +14,7 @@ require('lodash-obb');
 
 ### Style guides
 
-- [Coding](https://github.com/lodash/lodash/blob/master/CONTRIBUTING.md#coding-guidelines)
+- [Lodash coding guideline](https://github.com/lodash/lodash/blob/master/CONTRIBUTING.md#coding-guidelines)
 
 ### TODO
 
