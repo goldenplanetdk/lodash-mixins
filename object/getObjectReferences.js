@@ -1,4 +1,4 @@
-_.mixin({'getObjectReferences': getObjectReferences});
+_.mixin({getObjectReferences: getObjectReferences});
 
 /**
  * Creates an array of object references
