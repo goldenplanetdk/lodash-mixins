@@ -1,4 +1,4 @@
-_.mixin({'getValues': getValues});
+_.mixin({getValues: getValues});
 
 /**
  * Creates an array of values at provided path

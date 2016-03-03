@@ -1,4 +1,4 @@
-_.mixin({'setDefault': setDefault});
+_.mixin({setDefault: setDefault});
 
 /**
  * Set default value only if current value is undefined

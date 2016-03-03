@@ -1,4 +1,4 @@
-_.mixin({'differenceDeep': differenceDeep});
+_.mixin({differenceDeep: differenceDeep});
 
 /**
  * Creates an object with unique properties not included in the other object
