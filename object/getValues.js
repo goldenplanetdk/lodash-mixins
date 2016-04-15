@@ -7,13 +7,15 @@ _.mixin({getValues: getValues});
  * {@link getObjectReferences}
  * @returns {Array} Values at `propetyPath`
  */
-function getValues(object, propertyPath, options = {}) {
+function getValues(object, propertyPath, options) {
+	
+	options = options || {};
 
-	var refs   = _.getObjectReferences.apply(this, arguments),
-		paths  = _.keys(refs),
-		values = _.map(paths, (path) => {
-			return _.get(object, path);
-		});
+	var refs   = _.getObjectReferences.apply(this, arguments);
+	var paths = _.keys(refs);
+	var values = _.map(paths, function(path) {
+		return _.get(object, path);
+	});
 
 	return values;
 }

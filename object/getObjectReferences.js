@@ -10,7 +10,9 @@ _.mixin({getObjectReferences: getObjectReferences});
  * @param {boolean} options.recursive Search for the property inside found objects
  * @returns {Object} Object references with paths as keys
  */
-function getObjectReferences(object, propertyPath, options = {}) {
+function getObjectReferences(object, propertyPath, options) {
+
+	options = options || {};
 
 	var objects = {};
 
@@ -19,7 +21,10 @@ function getObjectReferences(object, propertyPath, options = {}) {
 
 		if (_.get(descendant, propertyPath) !== undefined) {
 
-			var pathDescendant = path ? `${path}.${propertyPath}` : propertyPath;
+			var pathDescendant = path
+				? path + '.' + propertyPath
+				: propertyPath;
+
 			objects[pathDescendant] = descendant;
 
 			if (!options.recursive) {
@@ -29,7 +34,10 @@ function getObjectReferences(object, propertyPath, options = {}) {
 
 		_.forOwn(descendant, function(child, key) {
 
-			var pathChild = path ? `${path}.${key}` : key;
+			var pathChild = path
+				? path + '.' + key
+				: key;
+
 			findObjects(child, pathChild);
 		});
 	}
