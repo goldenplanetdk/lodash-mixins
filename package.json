@@ -1,13 +1,13 @@
 {
   "name": "@goldenplanet/lodash",
   "description": "Lodash mixins for OpenBizBox",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "authors": [
     "Steven Pribilinskiy <stepan@goldenplanet.com>"
   ],
   "homepage": "https://github.com/goldenplanetdk/lodash-mixins",
   "main": "index.js",
   "devDependencies": {
-    "lodash": "~3.10.1"
+    "lodash": "4.5.0"
   }
 }
