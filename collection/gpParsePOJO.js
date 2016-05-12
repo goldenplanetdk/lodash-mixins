@@ -14,9 +14,9 @@
 
 		string = string.trim();
 
-		var object,
-			hasOpening = /^\s*[{\[]/.test(string),
-			hasClosing = /[}\]]\s*;?\s*$/.test(string);
+		var object;
+		var hasOpening = /^\s*[{\[]/.test(string);
+		var hasClosing = /[}\]]\s*;?\s*$/.test(string);
 
 		if (hasOpening && hasClosing) {
 			object = (new Function('return ' + string))();

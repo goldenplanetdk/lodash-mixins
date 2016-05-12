@@ -19,6 +19,7 @@
 		var objects = {};
 
 		function findObjects(descendant, path) {
+
 			if (!_.isObject(descendant)) return;
 
 			if (_.get(descendant, propertyPath) !== undefined) {

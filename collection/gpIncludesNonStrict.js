@@ -28,19 +28,29 @@
 	 */
 	function gpIncludesNonStrict(collection, value, fromIndex, guard) {
 
-		collection = _.isArrayLike(collection) ? collection : _.values(collection);
-		fromIndex = (fromIndex && !guard) ? _.toInteger(fromIndex) : 0;
+		collection = _.isArrayLike(collection)
+			? collection
+			: _.values(collection)
+		;
+
+		fromIndex = (fromIndex && !guard)
+			? _.toInteger(fromIndex)
+			: 0
+		;
 
 		var length = collection.length;
+
 		if (fromIndex < 0) {
 			fromIndex = _.max(length + fromIndex, 0);
 		}
 
 		if (_.isString(collection) && collection) {
 			return (fromIndex <= length && collection.indexOf(value, fromIndex) > -1);
-		} else if (_.isArray()) {
+		}
+		else if (_.isArray()) {
 			return (!!length && baseIndexOf(collection, value, fromIndex) > -1);
-		} else {
+		}
+		else {
 			return collection == value;
 		}
 	}

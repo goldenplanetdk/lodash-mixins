@@ -1,7 +1,7 @@
 {
   "name": "@goldenplanet/lodash",
   "description": "Lodash mixins for OpenBizBox",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "authors": [
     "Steven Pribilinskiy <stepan@goldenplanet.com>"
   ],
