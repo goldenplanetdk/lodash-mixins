@@ -1,6 +1,6 @@
 (function() {
 
-	_.mixin({differenceDeep: gpDifferenceDeep});
+	_.mixin({gpDifferenceDeep: gpDifferenceDeep});
 
 	/**
 	 * Creates an object with unique properties not included in the other object

@@ -1,6 +1,6 @@
 (function() {
 
-	_.mixin({attemptWhenDefined: gpAttemptWhenDefined});
+	_.mixin({gpAttemptWhenDefined: gpAttemptWhenDefined});
 
 	/**
 	 * Little helper to invoke a function only if the provided property value is not undefined

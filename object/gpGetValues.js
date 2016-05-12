@@ -1,6 +1,6 @@
 (function() {
 
-	_.mixin({getValues: gpGetValues});
+	_.mixin({gpGetValues: gpGetValues});
 
 	/**
 	 * Creates an array of values at provided path

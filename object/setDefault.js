@@ -1,6 +1,6 @@
 (function() {
 
-	_.mixin({setDefault: gpSetDefault});
+	_.mixin({gpSetDefault: gpSetDefault});
 
 	/**
 	 * Set default value only if current value is undefined

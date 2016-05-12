@@ -1,6 +1,6 @@
 (function() {
 
-	_.mixin({inherit: gpInherit});
+	_.mixin({gpInherit: gpInherit});
 
 	/**
 	 * Make specified subclass object to inherit properties

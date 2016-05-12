@@ -1,6 +1,6 @@
 (function() {
 
-	_.mixin({getObjectReferences: gpGetObjectReferences});
+	_.mixin({gpGetObjectReferences: gpGetObjectReferences});
 
 	/**
 	 * Creates an array of object references

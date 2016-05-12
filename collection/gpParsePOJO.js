@@ -1,6 +1,6 @@
 (function() {
 
-	_.mixin({parsePOJO: gpParsePOJO});
+	_.mixin({gpParsePOJO: gpParsePOJO});
 
 	/**
 	 * Parse Plain Old Javascript Objects
