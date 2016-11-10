@@ -1,4 +1,4 @@
-(function() {
+(function(_) {
 
 	_.mixin({gpIncludesNonStrict: gpIncludesNonStrict});
 
@@ -55,5 +55,5 @@
 		}
 	}
 
-})();
+})(_);
 

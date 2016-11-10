@@ -1,4 +1,4 @@
-(function() {
+(function(_) {
 
 	_.mixin({gpParsePOJO: gpParsePOJO});
 
@@ -27,4 +27,4 @@
 		return object;
 	}
 
-})();
+})(_);

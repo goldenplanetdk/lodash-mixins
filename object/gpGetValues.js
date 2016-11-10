@@ -1,4 +1,4 @@
-(function() {
+(function(_) {
 
 	_.mixin({gpGetValues: gpGetValues});
 
@@ -21,4 +21,4 @@
 		return values;
 	}
 
-})();
+})(_);

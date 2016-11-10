@@ -1,4 +1,4 @@
-(function() {
+(function(_) {
 
 	_.mixin({gpDifferenceDeep: gpDifferenceDeep});
 
@@ -53,4 +53,4 @@
 		return diff;
 	}
 	
-})();
+})(_);

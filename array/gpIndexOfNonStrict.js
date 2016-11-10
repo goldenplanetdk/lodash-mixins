@@ -1,4 +1,4 @@
-(function() {
+(function(_) {
 
 	_.mixin({gpIndexOfNonStrict: gpIndexOfNonStrict});
 
@@ -39,5 +39,5 @@
 		return -1;
 	}
 
-})();
+})(_);
 

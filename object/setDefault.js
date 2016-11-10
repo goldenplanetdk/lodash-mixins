@@ -1,4 +1,4 @@
-(function() {
+(function(_) {
 
 	_.mixin({gpSetDefault: gpSetDefault});
 
@@ -22,4 +22,4 @@
 		return _.get(object, path);
 	}
 
-})();
+})(_);

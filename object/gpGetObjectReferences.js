@@ -1,4 +1,4 @@
-(function() {
+(function(_) {
 
 	_.mixin({gpGetObjectReferences: gpGetObjectReferences});
 
@@ -50,4 +50,4 @@
 		return objects;
 	}
 
-})();
+})(_);

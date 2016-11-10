@@ -1,4 +1,4 @@
-(function() {
+(function(_) {
 
 	_.mixin({gpAttemptWhenDefined: gpAttemptWhenDefined});
 
@@ -18,4 +18,4 @@
 			: _.attempt(callback, value);
 	}
 
-})();
+})(_);

@@ -1,4 +1,4 @@
-(function() {
+(function(_) {
 
 	_.mixin({gpInherit: gpInherit});
 
@@ -28,4 +28,4 @@
 		return child;
 	}
 
-})();
+})(_);
