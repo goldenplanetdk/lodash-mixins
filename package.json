@@ -8,6 +8,6 @@
   "homepage": "https://github.com/goldenplanetdk/lodash-mixins",
   "main": "index.js",
   "devDependencies": {
-    "lodash": "4.17.13"
+    "lodash": "4.17.19"
   }
 }
